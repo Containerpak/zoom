@@ -4,5 +4,5 @@ ADD --checksum=sha256:17ec33965dace13662a563e4f2ab78281e33f39778ab4fa9fef4da90a5
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libasound2t64 libegl1 libgl1 libxcb-xinerama0 libxcb-xinput0 libxtst6 xz-utils && \
-    mkdir -p /opt/zoom && tar -xJf /tmp/source --strip-components=1 -C /opt/zoom && ln -s /opt/zoom/zoom /usr/bin/zoom && printf '[Desktop Entry]\nName=Zoom\nExec=zoom %U\nIcon=Zoom\nType=Application\nCategories=Network;VideoConference;\n' > /usr/share/applications/Zoom.desktop && \
+    mkdir -p /opt/zoom && tar -xJf /tmp/source --strip-components=1 -C /opt/zoom && ln -s /opt/zoom/zoom /usr/bin/zoom && printf '[Desktop Entry]\nName=Zoom\nExec=zoom %%U\nIcon=Zoom\nType=Application\nCategories=Network;VideoConference;\n' > /usr/share/applications/Zoom.desktop && \
     cpak-clean-junk

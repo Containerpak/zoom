@@ -50,7 +50,7 @@ jobs:
           provenance: mode=max
           sbom: true
       - name: Verify exports
-        run: docker run --rm ghcr.io/containerpak/zoom:main sh -c 'test -x /usr/bin/zoom && test -f /usr/share/applications/Zoom.desktop'
+        run: docker run --rm ghcr.io/containerpak/zoom:main sh -c 'test ! -e /usr/bin/zoom && test ! -e /usr/share/applications/Zoom.desktop'
       - name: Publish summary
         run: echo "ghcr.io/containerpak/zoom@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
 

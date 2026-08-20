@@ -5,6 +5,16 @@
   "description": "Join video meetings and collaborate online.",
   "version": "7.1.5.4332",
   "image": "ghcr.io/containerpak/zoom:main",
+  "runtime_sources": [
+    {
+      "name": "zoom_amd64.deb",
+      "url": "https://cdn.zoom.us/prod/7.1.5.4332/zoom_amd64.deb",
+      "sha256": "2c87382c0469185063fa9a3a507fea6be16882ef58c552b112297b52df3e5d18",
+      "size": 296992298,
+      "installer": "deb-extract",
+      "architecture": "amd64"
+    }
+  ],
   "binaries": [
     "/usr/bin/zoom"
   ],

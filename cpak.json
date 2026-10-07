@@ -4,7 +4,7 @@
   "name": "Zoom",
   "description": "Join video meetings and collaborate online.",
   "version": "7.1.5.4332",
-  "image": "ghcr.io/containerpak/zoom@sha256:722d83a2738995f3328f458cb95e57beefed89c1884c779a21583c7b7878e1d2",
+  "image": "ghcr.io/containerpak/zoom@sha256:6f28a1eeadac54773a1f6cbe37ee9b0454ea6cd37cca02511fd6ff53250276ca",
   "runtime_sources": [
     {
       "name": "zoom_amd64.deb",
